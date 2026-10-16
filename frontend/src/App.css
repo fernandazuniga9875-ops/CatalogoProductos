@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.mensaje {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.mensaje.ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.mensaje.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+.toolbar input {
+  flex: 1;
+  min-width: 200px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.btn-agregar {
+  background: #2563eb;
+  color: white;
+}
+.btn-editar {
+  background: #f59e0b;
+  color: white;
+}
+.btn-eliminar {
+  background: #dc2626;
+  color: white;
+}
+.btn-guardar {
+  background: #16a34a;
+  color: white;
+}
+.btn-cancelar {
+  background: #64748b;
+  color: white;
+}
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #2563eb;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.card .desc {
+  color: #64748b;
+  font-style: italic;
+}
+
+.card .acciones {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.formulario {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+.formulario .acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
